@@ -21,33 +21,40 @@ m tall.
 m tall.*/
 
 // Data 1
-let heightMark = 1.69;
-let massMark = 78;
+//variablen kann man als Const deklarieren weil diese Werte im Programm nicht geändert werden
+const heightMark = 1.69;
+const massMark = 78;
 
 let bmiMark = massMark / heightMark ** 2;
+console.log(bmiMark)
 
-let heightJohn = 1.95;
-let massJohn = 92;
+const heightJohn = 1.95;
+const massJohn = 92;
 
 let bmiJohn = massJohn / heightJohn ** 2;
+console.log(bmiJohn)
 
 let bmiHigher = bmiMark > bmiJohn;
 
+
+
 console.log(bmiHigher)
 
+
 // Data 2
-let height2Mark = 1.88;
-let mass2Mark = 95;
+const height2Mark = 1.88;
+const mass2Mark = 95;
 
 let bmi2Mark = mass2Mark / height2Mark ** 2;
 
-let height2John = 1.76;
-let mass2John = 85;
+const height2John = 1.76;
+const mass2John = 85;
 
 let bmi2John = mass2John / height2John ** 2;
 
 let bmi2Higher = bmi2Mark > bmi2John
 console.log(bmi2Higher)
+
 
 
 
