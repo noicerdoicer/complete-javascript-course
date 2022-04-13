@@ -164,7 +164,7 @@ else {
 }
 
 //cenutury muss außerhalb des if Statements initialisiert werdem , damit man die Varialbe über die Console ausgeben kann
-console.log(century;*/
+console.log(century;
 
 //Type conversion
 const inputYear = '1991';
@@ -177,6 +177,30 @@ console.log(String(23), 23);
 
 //Type coercion
 console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3);
+console.log('23' / '2');
+
+let n = '1' + 1;  // fügt die Zahlen zu einem String
+n -= 1;          // Konvertiert n in eine Zahl und zieht 1 ab
+console.log(n); */
+
+//5 falsy values : 0,'',undefined,null, NaN
+
+/*console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(''));*/
+
+
+const money = 0;
+
+if (money) {
+    console.log("Don't spend it all");
+}
+else {
+    consol.log("You should get a job!");
+}
 
 
 
