@@ -45,15 +45,21 @@ console.log(bmiHigher)
 const height2Mark = 1.88;
 const mass2Mark = 95;
 
-let bmi2Mark = mass2Mark / height2Mark ** 2;
+let bmi2Mark = Math.round(mass2Mark / height2Mark ** 2);
 
 const height2John = 1.76;
 const mass2John = 85;
 
-let bmi2John = mass2John / height2John ** 2;
+let bmi2John = Math.round(mass2John / height2John ** 2);
+console.log(bmi2Mark)
 
-let bmi2Higher = bmi2Mark > bmi2John
-console.log(bmi2Higher)
+/*let bmi2Higher = bmi2Mark > bmi2John
+console.log(bmi2John)*/
+
+if (bmi2John > bmi2Mark) { console.log(`John's BMI (${bmi2John}) is higher than Mark's (${bmi2Mark})!`); }
+else { console.log(`Mark's BMI (${bmi2Mark}) is higher than John's ${bmi2John} !`); }
+
+//console.log(bmi2Higher)
 
 
 

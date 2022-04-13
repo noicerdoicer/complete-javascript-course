@@ -32,3 +32,12 @@ console.log(population > populationFinnland)
 
 let discription = country + " is in " + continent + " ,and its " + population + " people speak " + language;
 console.log(discription);
+
+// L5 Strings and Templates
+let discriptionTemplate = `${country} is in ${continent} ,and its ${population} people speak ${language}.`;
+console.log(discriptionTemplate)
+
+// L6 Taking Decisions if/else Statements
+const averagePopulation = 33000000;
+if (population > averagePopulation) { console.log(`${country}'s population is above average`); }
+else { console.log(`${country}'s population is ${averagePopulation - population} below average.`); }

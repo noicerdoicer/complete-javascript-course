@@ -102,7 +102,7 @@ console.log(ageSarah >= 18);
 
 const isFullAge = ageSarah >= 18;
 
-console.log(now - 1991 > now - 2018);*/
+console.log(now - 1991 > now - 2018);
 
 const now = 2037;
 const ageJonas = now - 1991;
@@ -119,11 +119,64 @@ const averageAge = (ageJonas + ageSarah) / 2
 
 console.log(ageJonas, ageSarah, averageAge);
 
+const firstName = 'Simon';
+const job = 'Student';
+const birthYear = 1998;
+const year = 2037;
+
+const simon = "I'm " + firstName + " , a " + (year - birthYear) + " years old " + job + " !";
+
+console.log(simon);
 
 
+//template Sting ${} um Varialben und Berechnungen einzufügen , immer `` um Strings einzufügen
+const simonNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}`;
+console.log(simonNew);
 
 
+console.log('String with \n\  multiple \n\ lines');
 
+// Template Literals , neue Variante für Multiline Strings
+console.log(`String 
+multiple 
+lines `);*/
+
+/*const age = 15;
+
+
+if (age >= 18) {
+    console.log('Sarah can start driving licencse🤳')
+
+}
+else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young , she needs to wait ${yearsLeft} years 🤣`)
+};
+
+const birthYear = 2012;
+let century;
+
+if (birthYear <= 2000) {
+    let century = 20;
+}
+else {
+    let century = 21;
+}
+
+//cenutury muss außerhalb des if Statements initialisiert werdem , damit man die Varialbe über die Console ausgeben kann
+console.log(century;*/
+
+//Type conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas'));
+
+console.log(String(23), 23);
+
+//Type coercion
+console.log('I am ' + 23 + ' years old');
 
 
 
