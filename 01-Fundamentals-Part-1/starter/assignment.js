@@ -58,7 +58,7 @@ console.log(t1, t2, t3, t4, t5);*/
 
 const numNeighbour = prompt('How many neighbours do you have');
 
-if (numNeighbour == 1) {
+if (numNeighbour === 1) {
     console.log('Only 1 neighbour');
 }
 else if (numNeighbour > 1) {
