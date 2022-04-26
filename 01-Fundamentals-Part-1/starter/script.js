@@ -229,7 +229,7 @@ else if (favourite === 7) {
 else { console.log('Number is not 23 or 7'); }
 
 
-if (favourite !== 7) { console.log('Why not 7'); }*/
+if (favourite !== 7) { console.log('Why not 7'); }
 
 //Logic operators
 
@@ -249,7 +249,7 @@ if (ShouldDrive) {
 else { console.log('Someone else should drive !'); }
 */
 
-const isTired = false; // C
+/*const isTired = false; // C
 
 console.log(hasDriversLicence && hasGoodVision && !isTired);
 
@@ -257,4 +257,30 @@ console.log(hasDriversLicence && hasGoodVision && !isTired);
 if (hasDriversLicence && hasGoodVision && !isTired) {
     console.log('Sarah is able to drive !');
 }
-else { console.log('Someone else should drive !'); }
+else { console.log('Someone else should drive !'); }*/
+
+const day = 'Sunday';
+
+switch (day) {
+    case 'monday':
+        console.log('I plan my course structure');
+        console.log('Got to coding Meetup')
+        break;
+    case 'tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Write code Example');
+        break;
+    case 'friday':
+        console.log('record Videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('enjoy the weekend');
+        break;
+    default:
+        comsole.log('Not a valid Day');
+
+}
