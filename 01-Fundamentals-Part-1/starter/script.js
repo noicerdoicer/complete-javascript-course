@@ -231,7 +231,30 @@ else { console.log('Number is not 23 or 7'); }
 
 if (favourite !== 7) { console.log('Why not 7'); }*/
 
+//Logic operators
+
 const hasDriversLicence = true; //A 
 const hasGoodVision = true; // B
 
 console.log(hasDriversLicence && hasGoodVision);
+console.log(hasDriversLicence || hasGoodVision);
+console.log(!hasDriversLicence);
+
+
+const ShouldDrive = hasDriversLicence && hasGoodVision;
+/*
+if (ShouldDrive) {
+    console.log('Sarah is able to drive !');
+}
+else { console.log('Someone else should drive !'); }
+*/
+
+const isTired = false; // C
+
+console.log(hasDriversLicence && hasGoodVision && !isTired);
+
+
+if (hasDriversLicence && hasGoodVision && !isTired) {
+    console.log('Sarah is able to drive !');
+}
+else { console.log('Someone else should drive !'); }
