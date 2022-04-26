@@ -31,14 +31,25 @@ const Koalas3 = 101;
 
 //1. Durchschnitt berechnen 
 
-const avgDolphins = (Dolphins1 + Dolphins2 + Dolphins3) / 3
+const avgDolphins = (Dolphins1 + Dolphins2 + Dolphins3) / 3;
 
-const avgKoalas = (Koalas1 + Koalas2 + Koalas3) / 3
+const avgKoalas = (Koalas1 + Koalas2 + Koalas3) / 3;
+
+console.log(avgDolphins, avgKoalas);
+
+
 
 //2. Avg vergleichen
-if (avgDolphins > avgKoalas) {
+if (avgDolphins > avgKoalas && avgDolphins > 100) {
     console.log('Dolphin avg ist größer.');
 }
-else {
+if (avgDolphins == avgKoalas) {
+    console.log('Beide avg sind gleich.');
+}
+
+if (avgKoalas > avgDolphins && avgKoalas > 100) {
     console.log('Koala avg ist größer.');
+}
+else {
+    console.log('Nicht groß genug');
 }
