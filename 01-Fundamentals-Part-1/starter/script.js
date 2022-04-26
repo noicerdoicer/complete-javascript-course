@@ -261,6 +261,7 @@ else { console.log('Someone else should drive !'); }*/
 
 const day = 'sunday';
 
+
 switch (day) {
     case 'monday':
         console.log('I plan my course structure');
