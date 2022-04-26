@@ -41,3 +41,12 @@ console.log(discriptionTemplate)
 const averagePopulation = 33000000;
 if (population > averagePopulation) { console.log(`${country}'s population is above average`); }
 else { console.log(`${country}'s population is ${averagePopulation - population} below average.`); }
+
+
+//L7 Type Conversion and Coercion
+
+'9' - '5'; // 4
+'19' - '13' + '17'; // 6+17= 33
+'19' - '13' + 17; //19-13+17 = 
+'123' < 57;
+5 + 6 + '4' + 9 - 4 - 2;
