@@ -19,15 +19,35 @@ points. Otherwise, no team wins the trophy
 */
 
 //Dolphins
-const Dolphins1 = 96;
+//Set 1
+/*const Dolphins1 = 96;   
 const Dolphins2 = 108;
-const Dolphins3 = 89;
+const Dolphins3 = 89;*/
+
+//Set 2 
+/*const Dolphins1 = 97;
+const Dolphins2 = 112;
+const Dolphins3 = 101;*/
+
+//Set 3 
+const Dolphins1 = 97;
+const Dolphins2 = 112;
+const Dolphins3 = 101;
 
 //Koalas
-const Koalas1 = 97;
+///Set 1
+/*const Koalas1 = 97;
 const Koalas2 = 112;
-const Koalas3 = 101;
+const Koalas3 = 101;*/
 
+// Set 2
+/*const Koalas1 = 109;
+const Koalas2 = 95;
+const Koalas3 = 123;*/
+//Set 3 
+const Koalas1 = 109;
+const Koalas2 = 95;
+const Koalas3 = 106;
 
 //1. Durchschnitt berechnen 
 
@@ -43,11 +63,11 @@ console.log(avgDolphins, avgKoalas);
 if (avgDolphins > avgKoalas && avgDolphins > 100) {
     console.log('Dolphin avg ist größer.');
 }
-if (avgDolphins == avgKoalas) {
+else if (avgDolphins == avgKoalas && (avgDolphins && avgDolphins > 100)) {
     console.log('Beide avg sind gleich.');
 }
 
-if (avgKoalas > avgDolphins && avgKoalas > 100) {
+else if (avgKoalas > avgDolphins && avgKoalas > 100) {
     console.log('Koala avg ist größer.');
 }
 else {
