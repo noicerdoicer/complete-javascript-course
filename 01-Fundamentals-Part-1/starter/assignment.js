@@ -55,7 +55,7 @@ const t5 = 5 + 6 + '4' + 9 - 4 - 2; // '114'+9-4-2 = 1143
 console.log(t1, t2, t3, t4, t5);*/
 
 //L8 Equality Operators: == vs. ===
-
+//Dran denken das Numbers Case Sensitive ist
 const numNeighbour = Number(prompt("How many neighbours do you have"));
 
 if (numNeighbour === 1) {
