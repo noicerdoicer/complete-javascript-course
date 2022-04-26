@@ -76,7 +76,7 @@ Let's say Sarah is looking for a new country to live in. She wants to live in a
 country that speaks english, has less than 50 million people and is not an
 island.
 */
-
+/*
 const country = "Deutschland";
 const continent = "Europa";
 const population = 40000000;
@@ -92,3 +92,37 @@ if (language == 'English' && population < 50000000 && !isIsland) {
 else {
     console.log(`${country} doenst meet Sarahs criteria.`);
 }
+*/
+
+//L10 The switch Statement
+
+//1.
+
+const language = prompt('Your Language');
+
+//An die Anführungszeichen bei Case denken
+
+switch (language) {
+
+    case 'chinese':
+    case 'mandarin':
+        console.log("Most Number of speakers");
+        break;
+    case 'spanish':
+        console.log('2nd place in number of native speakers');
+        break;
+    case 'english':
+        console.log('3rd place');
+        break;
+    case 'hindi':
+        console.log('Number 5');
+        break;
+    case 'arabic':
+        console.log('5th most spoken language');
+        break;
+    default:
+        console.log('Great language too');
+}
+
+
+
