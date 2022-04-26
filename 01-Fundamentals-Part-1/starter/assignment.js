@@ -57,6 +57,7 @@ console.log(t1, t2, t3, t4, t5);*/
 //L8 Equality Operators: == vs. ===
 
 const numNeighbour = number(prompt("How many neighbours do you have"));
+const favourite = Number(prompt("What is your favourite Number ?"));
 
 if (numNeighbour === 1) {
     console.log('Only 1 neighbour');
