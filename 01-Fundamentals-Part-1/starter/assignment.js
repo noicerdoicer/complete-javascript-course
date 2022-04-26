@@ -8,13 +8,13 @@ let population = 81000000;
 console.log("L1 Values and Variables");
 console.log(country, continent, population);
 
-//l2 Data Types 
+//l2 Data Types
 
 const isIsland = false;
 let language;
 console.log(typeof isIsland, typeof language, typeof country, typeof continent, typeof population);
 
-//l3 let , const and var 
+//l3 let , const and var
 language = "German";
 
 /*continent = "Asia";
@@ -22,7 +22,7 @@ isIsland = true;
 console.log(continent, isIsland)*/
 // da Variablen als Const deklaritert und initialisiert wurden können diese nicht mutiert werden
 
-//l4 Basic Operators 
+//l4 Basic Operators
 /*
 let populationHalf = population / 2
 populationHalf++;
@@ -45,13 +45,27 @@ else { console.log(`${country}'s population is ${averagePopulation - population}
 */
 
 //L7 Type Conversion and Coercion
-
+/*
 const t1 = '9' - '5'; // 4
 const t2 = '19' - '13' + '17'; // 6+17= 617
 const t3 = '19' - '13' + 17; //19-13+17 = 23
 const t4 = '123' < 57; // 123 is größer --> false
 const t5 = 5 + 6 + '4' + 9 - 4 - 2; // '114'+9-4-2 = 1143
 
-console.log(t1, t2, t3, t4, t5);
+console.log(t1, t2, t3, t4, t5);*/
+
+//L8 Equality Operators: == vs. ===
+
+const numNeighbour = prompt('How many neighbours do you have');
+
+if (numNeighbour == 1) {
+    console.log('Only 1 neighbour');
+}
+else if (numNeighbour > 1) {
+    console.log(`You have ${numNeighbour} Neighbours`);
+}
+else {
+    console.log('No Neigbours');
+}
 
 
