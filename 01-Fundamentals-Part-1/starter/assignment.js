@@ -56,7 +56,7 @@ console.log(t1, t2, t3, t4, t5);*/
 
 //L8 Equality Operators: == vs. ===
 //Dran denken das Numbers Case Sensitive ist
-const numNeighbour = Number(prompt("How many neighbours do you have"));
+/*const numNeighbour = Number(prompt("How many neighbours do you have"));
 
 if (numNeighbour === 1) {
     console.log('Only 1 neighbour');
@@ -67,5 +67,28 @@ else if (numNeighbour > 1) {
 else {
     console.log('No Neigbours');
 }
+*/
+
+//L9 Logical Operators
+
+/*
+Let's say Sarah is looking for a new country to live in. She wants to live in a
+country that speaks english, has less than 50 million people and is not an
+island.
+*/
+
+const country = "Deutschland";
+const continent = "Europa";
+const population = 81000000;
+
+const language = "German";
+const isIsland = true;
+console.log(country, continent, population, isIsland, language, isIsland);
 
 
+if (language == 'English' && population < 50000000 && !isIsland) {
+    console.log('This country is for Sarah !');
+}
+else {
+    console.log('This country is not for Sarah. ');
+}
