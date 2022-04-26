@@ -79,16 +79,16 @@ island.
 
 const country = "Deutschland";
 const continent = "Europa";
-const population = 81000000;
+const population = 40000000;
 
-const language = "German";
-const isIsland = true;
+const language = "English";
+const isIsland = false;
 console.log(country, continent, population, isIsland, language, isIsland);
 
 
 if (language == 'English' && population < 50000000 && !isIsland) {
-    console.log('This country is for Sarah !');
+    console.log(`You should live in ${country}.`);
 }
 else {
-    console.log('This country is not for Sarah. ');
+    console.log(`${country} doenst meet Sarahs criteria.`);
 }
