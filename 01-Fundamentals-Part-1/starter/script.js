@@ -193,14 +193,45 @@ console.log(Boolean({}));
 console.log(Boolean(''));*/
 
 
-const money = 0;
+/*const money = 100;
 
 if (money) {
     console.log("Don't spend it all");
 }
 else {
-    consol.log("You should get a job!");
+    console.log("You should get a job!");
 }
 
 
+let height = 10;
+if (height) { console.log("Height is defined"); }
+else { console.log("Height is undefined"); }
 
+
+//Vergleichsparameter === betreibt keine Type Coneversion , nur ==
+const age = '18';
+
+if (age === 18) { console.log('You just became an adult :D'); }
+
+if (age == 18) { console.log('You just became an adult :D (loose)'); }
+
+
+const favourite = Number(prompt("What is your favourite Number ?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite === 23) { // 23 === 23
+    console.log('Cool! 23 is an amazing number!')
+}
+else if (favourite === 7) {
+    console.log('7 is also a cool number!');
+}
+else { console.log('Number is not 23 or 7'); }
+
+
+if (favourite !== 7) { console.log('Why not 7'); }*/
+
+const hasDriversLicence = true; //A 
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicence && hasGoodVision);
