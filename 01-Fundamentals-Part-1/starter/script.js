@@ -259,12 +259,12 @@ if (hasDriversLicence && hasGoodVision && !isTired) {
 }
 else { console.log('Someone else should drive !'); }*/
 
-const day = 'Sunday';
+const day = 'sunday';
 
 switch (day) {
     case 'monday':
         console.log('I plan my course structure');
-        console.log('Got to coding Meetup')
+        console.log('Got to coding Meetup');
         break;
     case 'tuesday':
         console.log('Prepare theory videos');
@@ -281,6 +281,5 @@ switch (day) {
         console.log('enjoy the weekend');
         break;
     default:
-        comsole.log('Not a valid Day');
-
+        console.log('Not a valid Day');
 }
