@@ -30,6 +30,8 @@ console.log(appleJuice)
 */
 
 
+//Man kann deklariert Funktionen vor ihrer Deklarierung aufrufen
+/*
 function calcAge1 (birthYear){
     return 2037 - birthYear;
     // Man kann Werte direkt ausrechen und über return zurückgeben
@@ -46,4 +48,38 @@ const calcAge2 = function(birthYear){
 }
 
 const age2 = calcAge2(1991);
-console.log(age1,age2)
+console.log(age1,age2);*/
+
+/*
+//Arrow Function
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1991);
+console.log(age3);
+
+
+const yearsUntilRetirenment = (birthYear, firstName) => {
+   const Age =  2037 -birthYear;
+   const retirement = 65-Age;
+return `${firstName} retires in ${retirement} years`;
+}
+
+console.log( yearsUntilRetirenment(1991, 'Simon'));
+console.log(yearsUntilRetirenment(1980,'Bob'));*/
+
+//functions calling functions
+
+function cutFruitPieces (fruit){
+    return fruit * 4;
+}
+
+function fruiteProcessor(apples,oranges){
+
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces = cutFruitPieces(oranges);
+
+    const juice = `Juice with ${apples} apples and ${oranges} oranges `;
+    return juice;
+}
+
+fruiteProcessor (2,3);
+
