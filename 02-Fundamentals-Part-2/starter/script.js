@@ -35,11 +35,15 @@ function calcAge1 (birthYear){
     // Man kann Werte direkt ausrechen und über return zurückgeben
 }
 
+//Deklarierte Funktion die man anschließend seperate aufruft
 const age1 = calcAge1(1991);
 console.log(age1);
 
-//Anonyme Funktion
-const Age2 = function(birthYear){
+
+//Anonyme Funktion (Function expression)
+const calcAge2 = function(birthYear){
     return 2037 -birthYear;
 }
 
+const age2 = calcAge2(1991);
+console.log(age1,age2)
