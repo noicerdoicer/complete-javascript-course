@@ -286,6 +286,8 @@ switch (day) {
         console.log('Not a valid Day');
 }
 */
+//Ternäre Operator ist nur für kleiner If Prüfungen
+// und gilt nur als Unterstützende Funktion
 const age = 15;
  age >= 18 ? console.log('I like to drink wine') : console.log('I dont like wine');
 const drink = age >=18 ?'wine':'water';
