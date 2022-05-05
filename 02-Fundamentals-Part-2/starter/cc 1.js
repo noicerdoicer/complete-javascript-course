@@ -47,10 +47,10 @@ const checkwinner = function(Dolphins,Koalas) {
     const koalasAvg = calcAverage(Koalas);
 
 //3 Check win condition
-if (dolphinsAvg > (koalasAvg*2)){
+if (dolphinsAvg >= (koalasAvg*2)){
     console.log(`Dolphins win (${dolphinsAvg} vs ${koalasAvg})`);
 }
-else if(koalasAvg > (dolphinsAvg*2)){
+else if(koalasAvg >= (dolphinsAvg*2)){
 console.log(`Koalas win (${koalasAvg} vs ${dolphinsAvg})`);
 }
 else {
