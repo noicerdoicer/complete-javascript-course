@@ -118,6 +118,8 @@ const friend2 = 'Steven';
 const friend3 = 'Peter';
 
 //array
+//Friends wurde als Const deklariert. Nur primitive Variablen sind nicht motiervar. Array ist kein primitiver Datentyp
+//man kann jedoch nicht das ganze Array auf einmal neu deklarieren
 const friends = ['Michael','Steven','Peter'];
 
 console.log(friends);
@@ -125,13 +127,14 @@ console.log(friends);
 const years = new Array(1991,1984,2008,2020);
 
 
-console.log(friends[1]);
+console.log(friends[2]);
 
 
 console.log(friends.length);
 console.log(friends[friends.length-1]);
 
-
+friends[2] = 'Jay';
+console.log(friends);
 
 
 
