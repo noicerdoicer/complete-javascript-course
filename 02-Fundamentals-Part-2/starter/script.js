@@ -86,6 +86,7 @@ console.log( fruiteProcessor (2,3));
 
 */
 
+/*
 const calcAge = function(birthYear){
     return 2037 - birthYear;
 }
@@ -108,3 +109,32 @@ else{
 
 console.log(yearsUntilRetirenment(1991,'Jonas'));
 console.log(yearsUntilRetirenment(1950,'Mike'));
+*/
+
+
+//mehrer Daten ohne Arrays speichern
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+//array
+const friends = ['Michael','Steven','Peter'];
+
+console.log(friends);
+
+const years = new Array(1991,1984,2008,2020);
+
+
+console.log(friends[1]);
+
+
+console.log(friends.length);
+console.log(friends[friends.length-1]);
+
+
+
+
+
+
+
+
