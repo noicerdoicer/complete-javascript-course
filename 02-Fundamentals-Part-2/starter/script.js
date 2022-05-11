@@ -165,9 +165,40 @@ console.log(ages);
 const friends = ['Michael','Steven','Peter'];
 const newLength = friends.push('Jay');
 
+//Element hinzufügen
 //Element an das Array hängen
 console.log(friends);
 console.log(newLength);
 
 
-friends.unshift ('John')
+//Element an den Beginn des Array hinzufügen
+friends.unshift ('John');
+console.log(friends);
+
+//Element entfernen
+friends.pop(); //Last
+const popped = friends.pop(); 
+console.log(popped);//gibt popped Element zurück , nicht array Länge
+console.log(friends);
+
+
+friends.shift();//First
+console.log(friends)
+
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));
+
+
+friends.push(23);
+//ES & Funktion die Case Sensitive ist und strikter Gleichheit
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes(23));
+
+if(friends.includes('Peter')){
+    console.log('You have a friend called Peter')
+}
+else if (friends.includes('Steven')){
+    console.log('You have a Friend called Steven');
+}

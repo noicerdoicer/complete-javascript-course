@@ -60,3 +60,5 @@ else {
 
 //trigger function with Testdata
 const wincheck = checkwinner(dolphins,koalas);
+
+
