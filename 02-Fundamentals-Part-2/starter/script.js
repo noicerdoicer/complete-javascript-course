@@ -162,6 +162,7 @@ const ages = [calcAge(years[0]),calcAge(years[1]),calcAge(years[years.length-1])
 console.log(ages);
 */
 
+/*
 const friends = ['Michael','Steven','Peter'];
 const newLength = friends.push('Jay');
 
@@ -202,3 +203,73 @@ if(friends.includes('Peter')){
 else if (friends.includes('Steven')){
     console.log('You have a Friend called Steven');
 }
+*/
+/*
+//Array
+const jonasArray = [
+    'Jonas',
+    'Schmedtmann',
+    2037-1991,
+    'teacher',
+    ['Michael','Peter','Steven']
+];
+
+
+//Object Literal Context
+const jonas = {
+    firstname : 'Jonas',
+    lastname : 'Schmedtmann',
+    age : 2037-1991,
+    job : 'teacher',
+    friends:['Michael','Peter','Steven']
+}
+
+
+console.log(jonas.firstname);
+*/
+
+const jonas = {
+    firstName : 'Jonas',
+    lastName : 'Schmedtmann',
+    age : 2037-1991,
+    job : 'teacher',
+    friends:['Michael','Peter','Steven']
+}
+
+console.log(jonas);
+
+//Punkt Noation 
+console.log(jonas.lastName);
+
+//Klammer Notation
+//hiebrei keinen computed Indicator genutzt werden , geht nicht bei Punkt Notation
+console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+console.log(jonas['first'+nameKey]);
+console.log(jonas['last'+nameKey]);
+
+//Funktioniert so nicht
+//console.log(jonas.'last'+nameKey);
+
+const interestedIn = prompt('What do you want to kno about Jonas? Choose between firstName , lastName , age, job and friends');
+
+//Abfrage um zu prüfen , ob Eigenschaft des Objektes existiert
+if(jonas[interestedIn]){
+    console.log(jonas[interestedIn]);
+}
+else{
+    console.log('Wrong request. Choose between firstName , lastName , age, job and friends');
+}
+
+//Neuen Eigenschaften zu Objekt hinzufügen
+
+jonas.location ='Portugal';
+
+jonas['twitter'] = '@jonasschmedtmann';
+
+console.log(jonas);
+
+//Challenge 
+//"Jonas has 3 friends , and his best friend is called Michael"
+console.log(`${jonas.firstName} has ${jonas.friends.length} ,  and his best friend is called ${jonas.friends[0]}`);
