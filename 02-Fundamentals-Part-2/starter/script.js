@@ -298,24 +298,16 @@ const jonas = {
     return this.age;
   },
 
+  //Challenge
+  //" Jonas is a 46-year old teacher, and he has a/no drivers license"
   getSummary: function () {
-    if (this.hasDriverLicense) {
-      this.summary = `${this.firstName} is a ${this.calcAge()} ${
-        this.job
-      } and he has a drivers license`;
-    } else {
-      this.summary = `${this.firstName} is a ${this.calcAge()} ${
-        this.job
-      } and he has no drivers license`;
-    }
-    return this.summary;
+    return `${this.firstName} is a ${this.calcAge()}-year old ${
+      this.job
+    } and he has ${this.hasDriverLicense ? "a" : "no"} drivers license`; //ersetzt eine kleine IF Schleife
   },
 };
 //dot notation
 console.log(jonas.calcAge());
 console.log(jonas.age);
 
-console.log(jonas.summary);
-
-//Challenge
-//" Jonas is a 46-year old teacher, and he has a/no drivers license"
+console.log(jonas.getSummary());
