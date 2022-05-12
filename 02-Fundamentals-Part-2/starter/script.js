@@ -298,11 +298,15 @@ const jonas = {
     return this.age;
   },
 
-  summaryJonas: function () {
+  getSummary: function () {
     if (this.hasDriverLicense) {
-      this.summary = `${this.firstName} is a ${this.age} ${this.job} and he has a drivers license`;
+      this.summary = `${this.firstName} is a ${this.calcAge()} ${
+        this.job
+      } and he has a drivers license`;
     } else {
-      this.summary = `${this.firstName} is a ${this.age} ${this.job} and he has no drivers license`;
+      this.summary = `${this.firstName} is a ${this.calcAge()} ${
+        this.job
+      } and he has no drivers license`;
     }
     return this.summary;
   },
@@ -311,7 +315,7 @@ const jonas = {
 console.log(jonas.calcAge());
 console.log(jonas.age);
 
-console.log(jonas.summaryJonas);
+console.log(jonas.summary);
 
 //Challenge
 //" Jonas is a 46-year old teacher, and he has a/no drivers license"
