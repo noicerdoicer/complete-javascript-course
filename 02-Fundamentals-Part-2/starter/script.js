@@ -228,6 +228,7 @@ const jonas = {
 console.log(jonas.firstname);
 */
 
+/*
 const jonas = {
     firstName : 'Jonas',
     lastName : 'Schmedtmann',
@@ -273,3 +274,40 @@ console.log(jonas);
 //Challenge 
 //"Jonas has 3 friends , and his best friend is called Michael"
 console.log(`${jonas.firstName} has ${jonas.friends.length} ,  and his best friend is called ${jonas.friends[0]}`);
+*/
+const jonas = {
+    firstName : 'Jonas',
+    lastName : 'Schmedtmann',
+    birthYear : 1991,
+    job : 'teacher',
+    friends:['Michael','Peter','Steven'],
+    hasDriverLicense: true,
+
+// Funktion wird nicht als Variable sondern als Eigenschaft des Objektes Jonas gespeichert.
+//Funktion die zu einem Objekt gehört , wird als Methode bezeichnet
+  /*  calcAge: function(birthYear){
+        return 2037-birthYear;
+    }
+};*/
+
+/*calcAge: function(){
+    //This wird genutzt um die Dry Regel nicht zu verletzen
+    console.log(this)
+    return 2037 - this.birthYear;
+}*/
+calcAge: function(){
+    this.age = 2037 - this.birthYear;
+    return this.age;
+}
+};
+//dot notation
+console.log(jonas.calcAge());
+console.log(jonas.age);
+
+
+//paranteces notation   
+//console.log(jonas['calcAge'](1991));
+
+
+
+
