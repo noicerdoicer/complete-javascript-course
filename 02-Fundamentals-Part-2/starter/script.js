@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /*
 let hasDriversLicense = false;
@@ -29,7 +29,6 @@ console.log(appleJuice)
 //Funktion helfen bei der Einhaltung des DRY Prinzip --> Dont repeat yourself
 */
 
-
 //Man kann deklariert Funktionen vor ihrer Deklarierung aufrufen
 /*
 function calcAge1 (birthYear){
@@ -49,7 +48,6 @@ const calcAge2 = function(birthYear){
 
 const age2 = calcAge2(1991);
 console.log(age1,age2);*/
-
 
 /*
 //Arrow Function
@@ -276,38 +274,44 @@ console.log(jonas);
 console.log(`${jonas.firstName} has ${jonas.friends.length} ,  and his best friend is called ${jonas.friends[0]}`);
 */
 const jonas = {
-    firstName : 'Jonas',
-    lastName : 'Schmedtmann',
-    birthYear : 1991,
-    job : 'teacher',
-    friends:['Michael','Peter','Steven'],
-    hasDriverLicense: true,
+  firstName: "Jonas",
+  lastName: "Schmedtmann",
+  birthYear: 1991,
+  job: "teacher",
+  friends: ["Michael", "Peter", "Steven"],
+  hasDriverLicense: true,
 
-// Funktion wird nicht als Variable sondern als Eigenschaft des Objektes Jonas gespeichert.
-//Funktion die zu einem Objekt gehört , wird als Methode bezeichnet
+  // Funktion wird nicht als Variable sondern als Eigenschaft des Objektes Jonas gespeichert.
+  //Funktion die zu einem Objekt gehört , wird als Methode bezeichnet
   /*  calcAge: function(birthYear){
         return 2037-birthYear;
     }
 };*/
 
-/*calcAge: function(){
+  /*calcAge: function(){
     //This wird genutzt um die Dry Regel nicht zu verletzen
     console.log(this)
     return 2037 - this.birthYear;
 }*/
-calcAge: function(){
+  calcAge: function () {
     this.age = 2037 - this.birthYear;
     return this.age;
-}
+  },
+
+  summaryJonas: function () {
+    if (this.hasDriverLicense) {
+      this.summary = `${this.firstName} is a ${this.age} ${this.job} and he has a drivers license`;
+    } else {
+      this.summary = `${this.firstName} is a ${this.age} ${this.job} and he has no drivers license`;
+    }
+    return this.summary;
+  },
 };
 //dot notation
 console.log(jonas.calcAge());
 console.log(jonas.age);
 
+console.log(jonas.summaryJonas);
 
-//paranteces notation   
-//console.log(jonas['calcAge'](1991));
-
-
-
-
+//Challenge
+//" Jonas is a 46-year old teacher, and he has a/no drivers license"
