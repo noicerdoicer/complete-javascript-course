@@ -358,3 +358,11 @@ for (let index = 0; index < jonasArray.length; index++) {
 
   console.log(jonasArray[index], typeof jonasArray[index]);
 }
+
+console.log("----Break with Number----");
+//continue and break
+for (let index = 0; index < jonasArray.length; index++) {
+  if (typeof jonasArray[index] === "number") break;
+
+  console.log(jonasArray[index], typeof jonasArray[index]);
+}
