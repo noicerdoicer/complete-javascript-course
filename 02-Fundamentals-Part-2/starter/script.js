@@ -315,8 +315,46 @@ console.log(jonas.age);
 console.log(jonas.getSummary());
 */
 
+/*
 const repetiton = 10;
 
 for (let index = 1; index <= repetiton; index++) {
   console.log(`Repetition ${index}`);
+}*/
+
+const jonasArray = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+  true,
+];
+
+const types = [];
+
+for (let index = 0; index < jonasArray.length; index++) {
+  //reading Elements from jonas array
+  console.log(jonasArray[index], typeof jonasArray[index]);
+  //filling the types array
+  //types[index] = typeof jonasArray[index];
+  //hängen neues Element vorne an das jonasArray an.
+  types.push(typeof jonasArray[index]);
+}
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let index = 0; index < years.length; index++) {
+  ages.push(2037 - years[index]);
+}
+console.log(ages);
+
+console.log("----Only Strings----");
+//continue and break
+for (let index = 0; index < jonasArray.length; index++) {
+  if (typeof jonasArray[index] !== "string") continue;
+
+  console.log(jonasArray[index], typeof jonasArray[index]);
 }
