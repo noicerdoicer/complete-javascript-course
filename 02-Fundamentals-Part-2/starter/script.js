@@ -273,6 +273,7 @@ console.log(jonas);
 //"Jonas has 3 friends , and his best friend is called Michael"
 console.log(`${jonas.firstName} has ${jonas.friends.length} ,  and his best friend is called ${jonas.friends[0]}`);
 */
+/*
 const jonas = {
   firstName: "Jonas",
   lastName: "Schmedtmann",
@@ -288,11 +289,12 @@ const jonas = {
     }
 };*/
 
-  /*calcAge: function(){
+/*calcAge: function(){
     //This wird genutzt um die Dry Regel nicht zu verletzen
     console.log(this)
     return 2037 - this.birthYear;
 }*/
+/*
   calcAge: function () {
     this.age = 2037 - this.birthYear;
     return this.age;
@@ -311,3 +313,10 @@ console.log(jonas.calcAge());
 console.log(jonas.age);
 
 console.log(jonas.getSummary());
+*/
+
+const repetiton = 10;
+
+for (let index = 1; index <= repetiton; index++) {
+  console.log(`Repetition ${index}`);
+}
