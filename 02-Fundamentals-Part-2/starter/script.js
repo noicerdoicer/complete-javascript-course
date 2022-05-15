@@ -322,6 +322,7 @@ for (let index = 1; index <= repetiton; index++) {
   console.log(`Repetition ${index}`);
 }*/
 
+/*
 const jonasArray = [
   "Jonas",
   "Schmedtmann",
@@ -365,4 +366,45 @@ for (let index = 0; index < jonasArray.length; index++) {
   if (typeof jonasArray[index] === "number") break;
 
   console.log(jonasArray[index], typeof jonasArray[index]);
+}
+*/
+/*
+const jonasArray = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+];
+
+//0,1....,4
+//4,3,...,0
+//array rückwärts zählen lassen
+for (let index = jonasArray.length - 1; index >= 0; index--) {
+  console.log(index, jonasArray[index]);
+}
+
+//nested if Loop
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`--------- Starting Exercises ${exercise}`);
+//Übergabe der Variable Exercise aus dem ersten Loop in den verschachtelten Loop 
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Excercise ${exercise}: Lifting weight repetition ${rep}`);
+  }
+}
+*/
+
+//gleichen Loop mit While schreiben --> mit Zählvariable
+let rep = 1;
+while (rep <= 10) {
+  console.log(`Repetition ${rep}`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  // let dice = Math.trunc(Math.random() * 6) + 1;
+  console.log(`You rolled a ${dice}`);
 }
