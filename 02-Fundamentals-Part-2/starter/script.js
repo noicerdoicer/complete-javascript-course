@@ -396,15 +396,18 @@ for (let exercise = 1; exercise < 4; exercise++) {
 */
 
 //gleichen Loop mit While schreiben --> mit Zählvariable
-let rep = 1;
+/*let rep = 1;
 while (rep <= 10) {
   console.log(`Repetition ${rep}`);
   rep++;
-}
+}*/
 
 let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(`You rolled a ${dice}`);
 
 while (dice !== 6) {
   // let dice = Math.trunc(Math.random() * 6) + 1;
   console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
 }
+console.log(`You rolled a ${dice}`);
