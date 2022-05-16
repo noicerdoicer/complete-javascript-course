@@ -48,8 +48,7 @@ for (let index = 0; index < bills.length; index++) {
   totals.push(tip + bills);
 }
 
-console.log(`Tips ${tips}`);
-console.log(totals);
+console.log(bills, tips, totals);
 
 //4
 
