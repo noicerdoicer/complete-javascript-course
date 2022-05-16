@@ -9,7 +9,7 @@ if(hasDriversLicense) console.log('I can drive');
 */
 
 /*
-//Funktion deklarieren 
+,//Funktion deklarieren 
 function logger(){
 console.log('My name is Jonas');
 }
@@ -176,7 +176,7 @@ console.log(friends);
 
 //Element entfernen
 friends.pop(); //Last
-const popped = friends.pop(); 
+,const popped = friends.pop(); 
 console.log(popped);//gibt popped Element zurück , nicht array Länge
 console.log(friends);
 
@@ -185,6 +185,7 @@ friends.shift();//First
 console.log(friends)
 
 
+//to retrieve the Index of an Element in an Array
 console.log(friends.indexOf('Steven'));
 console.log(friends.indexOf('Bob'));
 
