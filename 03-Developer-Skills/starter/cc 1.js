@@ -26,6 +26,7 @@ into sub-problems!
 // - Add..... between elements and start and end of
 
 const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
 
 const printforecast = function (arr) {
   let tempString = "... ";
@@ -37,3 +38,4 @@ const printforecast = function (arr) {
 };
 
 printforecast(data1);
+printforecast(data2);
