@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(240, 240, 174);
+  font-family: Arial;
+  font-size: 20px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+/* "." wird zum Ansprechen von Klassen im HTML Dokument genutzt*/
+.second {
+  color: aqua;
+}
+
+/* Namen direkt ansprechen */
+#your-name {
+  background-color: rgb(107, 107, 30);
+  border: 5px solid rgb(30, 30, 25);
+  /* Ist eine Shortproperty weil man direkt mehrere Eigenschaften ansprechen kann*/
+}
